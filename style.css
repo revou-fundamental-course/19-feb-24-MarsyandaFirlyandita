@@ -19,7 +19,7 @@ body {
 }
 
 .header-wrapper > .menu > button {
-    background-color: white;
+    background-color: rgb(248, 245, 99);
     padding: 8px 16px;
     border: 1px solid gray;
     cursor: pointer;
@@ -30,18 +30,24 @@ body {
 .our-office {
     display: flex;
     justify-content: space-around;
-    border-top: 3px solid;
+    border-top: 1px solid;
 }
 
 .circle-image {
     margin-top: 50px;
-    width: 100px;
-    height: 100px;
+    width: 400px;
+    height: 400px;
     border: 2px solid black;
     border-radius: 50%;
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
+    background-position: center;
+}
+
+h5 {
+    font-size: 50px;
+    text-align: center;
 }
 
 .inquiry-box {
@@ -51,32 +57,60 @@ body {
 }
 
 .inquiry-form {
+    font-size: 50px;
     display: block;
     flex-direction: column;
+    margin-top: 100px;
+    margin-left: 200px;
+    width: 900px;
+    height: 1200px;
+    border: 1px solid black;
+}
+
+input {
+    width: 400px;
+    height: 50px;
+    font-size: 40px;
+}
+
+textarea {
+    font-size: 30px;
+}
+
+button {
+    font-size: 30px;
+    background-color: rgb(252, 225, 230);
 }
 
 .output {
+    width: 800px;
+    height: 700px;
     border: 2px solid black;
+    margin-top: 100px;
+    margin-left: 200px;
+    font-size: 50px;
 }
 
 .logo {
-    width: 70px;
-    height: 70px;
+    width: 200px;
+    height: 200px;
+    border-radius: 100%;
 }
+
 .introgambar {
     display: block;
     margin-left: auto;
     margin-right: auto;
     margin-bottom: 30px;
     margin-top: 30px;
-    width: 40%;
+    width: 20%;
     background-color: white;
     box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
 }
 
-form {
-    display: grid;
-    grid-template-columns: 200px 2fr;
+.halaman2 {
+    font-size: 40px;
+    font-family: 'Times New Roman', Times, serif;
 }
 
 @media only screen and (max-width: 600px) {
@@ -92,4 +126,11 @@ form {
     .logo {
         margin-bottom: 14px;
     }
+}
+
+@media only screen and (max-width: 480px) {
+    .our-office {
+        flex-direction: column;
+    }
+
 }
