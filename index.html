@@ -5,14 +5,15 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>My Web</title>
     <link rel="stylesheet" href="style.css">
-    
+
 </head>
 <body>
     <header class="header-wrapper">
-        <img class="logo" alt="revou-logo" src="https://th.bing.com/th/id/OIP.92EhvJK5G6wUU4qBuFmtKgHaHa?rs=1&pid=ImgDetMain" alt="Logo">
+        <img class="logo" alt="revou-logo" src="https://i.pinimg.com/474x/ae/97/8e/ae978ee8c7893a00b0e7928c079dbf6a.jpg" alt="Logo">
         <div class="menu">
             <button>Home</button>
             <button>Our Profile</button>
+            <button>Portfolio</button>
             <button>Message Us</button>
         </div>
     </header>
@@ -24,21 +25,21 @@
     <img class="introgambar" src="https://cdn140.picsart.com/292427518032211.png?r1024x1024">
     <img class="introgambar" src="https://i.pinimg.com/originals/e6/4b/b9/e64bb9ea1117b4a5d132bae94c507c10.jpg">
     
-    <button onclick="plusDivs(-1)">Previous</button>
-    <button onclick="plusDivs(1)">Next</button>
+    <button class="next" onclick="plusDivs(-1)">Previous</button>
+    <button class="next" onclick="plusDivs(1)">Next</button>
     </div>
 
     <div class="our-office">
         <div>
-            <div class="circle-image" style="background-image: url('assets/gambar1.jpg');"></div>
+            <div class="circle-image" style="background-image: url('https://cf.shopee.co.id/file/1248d68cdd294e8680e7dd3159176505');"></div>
             <h5>Sidoarjo</h5>
         </div>
         <div>
-            <div class="circle-image"></div>
+            <div class="circle-image" style="background-image: url('https://cdn140.picsart.com/292427518032211.png?r1024x1024');"></div>
             <h5>Bandung</h5>
         </div>
         <div>
-            <div class="circle-image"></div>
+            <div class="circle-image" style="background-image: url('https://i.pinimg.com/originals/e6/4b/b9/e64bb9ea1117b4a5d132bae94c507c10.jpg');"></div>
             <h5>Surabaya</h5>
         </div>
     </div>
@@ -46,19 +47,20 @@
     <div class="inquiry-box">
         <form name="message-form" class="inquiry-form" onsubmit="return validateForm()">
             Nama : 
-            <input required placeholder="Nama" type="text" id="name-input" name="name-input">
+            <input required placeholder="Nama Lengkap" type="text" id="name-input" name="name-input">
             <br><br>
             Tanggal Lahir : 
             <input type="date" name="birth-date">
             <br><br>
             Jenis Kelamin : 
+            <br><br>
             <input type="radio" id="male" name="gender" value="male">
             <label for="html">Laki-Laki</label>
             <input type="radio" id="female" name="gender" value="female">
             <label for="female">Perempuan</label>
             <br><br>
             Pesan : 
-            <textarea placeholder="Pesan" name="message"></textarea>
+            <textarea placeholder="Pesan singkat" name="message"></textarea>
             <br><br>
             <button id="kirim" type="submit">Submit</button>
 
@@ -66,13 +68,13 @@
             </select>
         </form>
         <div class="output">
-            <p>Nama : <span id="sender-full-name"></span></p>
-            <p>Tanggal Lahir : <span id="sender-birth-date"></span></p>
-            <p>Jenis Kelamin : <span id="sender-gender"></span></p>
-            <p>Pesan : <span id="sender-message"></span></p>
+            <p>Nama             : <span id="sender-full-name"></span></p>
+            <p>Tanggal Lahir    : <span id="sender-birth-date"></span></p>
+            <p>Jenis Kelamin    : <span id="sender-gender"></span></p>
+            <p>Pesan            : <span id="sender-message"></span></p>
+            <p>Time             : <span id="current-time"></span></p>
         </div>
 
-    </div>
-    <script src="js/script.js"></script>
+        <script src="js/script.js"></script>
 </body>
 </html>
